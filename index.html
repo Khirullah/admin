@@ -59,8 +59,8 @@
 
         .container {
             margin-top: 10%;
-            margin-left: 10%;
-            width: 80%;
+            margin-left: 5%;
+            width: 90%;
             height: 80%;
             background: #f4dabf;
             border-radius: 1rem;
@@ -82,6 +82,11 @@
             text-align: center;
             padding: 8px;
         }
+		h2{
+		text-align: center;
+		font-size: 2em;
+		font-family: sans-serif;
+		}
 
         input[type="button"], input[type="submit"] {
             background-color: #36A9AE;
@@ -114,12 +119,14 @@
             border: thin solid blue;
             border-radius: 4px;
             display: inline-block;
-            font: inherit;
+            font-family: sans-serif;
             line-height: 1.5em;
+			width: 60%;
             padding: 0.5em 3.5em 0.5em 1em;
             /* reset */
 
-            margin: 0;
+            margin-left: 5%;
+			margin-top: -10%;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -141,7 +148,17 @@
                     border-color: grey;
                     outline: 0;
                 }
+label{
+font-family: sans-serif;
+margin-left: 70%;
+margin-top: 5%;
 
+}
+#saa{
+margin-left: 25%;
+margin-top: 2%;
+width: 20%;
+}
     </style>
 </head>
 
@@ -154,8 +171,7 @@
         <li><a id="spend" href="#">خرج شده</a></li>
     </ul>
     </br>
-    </br>
-    </br>
+
     <label for="jaidat">لیست جایدات</label>
 
     <select class="jaidat" id="jaid"><i class="fa-solid fa-bars"></i>
@@ -163,14 +179,14 @@
         <option value="bist">بیست متره</option>
         <option value="qala">قلعه نو</option>
     </select>
-    <input type="button" id="saa" value="save">
+    <input  type="button" id="saa" value="تائید">
 
     <div class="container">
         <div class="recived">
             <div id='see'></div>
             <h2>پول از دکاندار گرفته شده</h2>
 
-            <div id="" style="overflow:scroll; height:330px;">
+            <div id="" style="overflow:scroll; height:90%;">
                 <table>
                     <thead>
                     <th>No:</th>
@@ -193,19 +209,17 @@
 
         <div class="owner_recived">
 
-            <h2>پول رسیده شده برای مالک جایدات</h2>
+            <h2>پول رسیده به مالک جایدات</h2>
 
 
-            <div id="" style="overflow:scroll; height:330px;">
+            <div id="" style="overflow:scroll; height:90%;">
                 <table>
                     <thead>
                     <th>No</th>
                     <th>تاریخ</th>
                     <th>مقدار پول</th>
                     <th>تائید مالک جایدات</th>
-                    <th>
-                        control
-                    </th>
+                    <th>تائید</th>
 
                     </thead>
                     <tbody id="tbody2">
@@ -246,7 +260,7 @@
         <div class="spend">
             <h2>مصارف</h2>
 
-            <div id="" style="overflow:scroll; height:330px;">
+            <div id="" style="overflow:scroll; height:90%;">
                 <table>
                     <thead>
                     <th>No</th>
@@ -254,7 +268,7 @@
                     <th>تاریخ</th>
                     <th>مقدار پول</th>
                     <th>تائید مالک جایدات</th>
-                    <th>controle</th>
+                    <th>تائید</th>
 
                     </thead>
                     <tbody id="tbody3">
