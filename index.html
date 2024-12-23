@@ -113,7 +113,7 @@
             width: 50%;
         }
 
-        select {
+        .jaidat {
             /* styling */
             background-color: white;
             border: thin solid blue;
@@ -133,14 +133,14 @@
             -webkit-appearance: none;
             -moz-appearance: none;
         }
-            select.jaidat {
+            .jaidat {
                 background-image: linear-gradient(45deg, transparent 50%, blue 50%), linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
                 background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
                 background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
                 background-repeat: no-repeat;
             }
 
-                select.jaidat:focus {
+                .jaidat:focus {
                     background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
                     background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
                     background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
@@ -185,7 +185,35 @@ width: 20%;
         <div class="recived">
             <div id='see'></div>
             <h2>پول از دکاندار گرفته شده</h2>
-
+			<br>
+				    <select id="searchmonth">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+				    <select id="searchyear">
+                    <option value="1403">1403</option>
+                    <option value="1404">1404</option>
+                    <option value="1405">1405</option>
+                    <option value="1406">1406</option>
+                    <option value="1407">1407</option>
+                    <option value="1408">1408</option>
+                    <option value="1409">1409</option>
+                    <option value="1410">1410</option>
+                </select>
+				<button id="search" class="button">
+				<span class="button-content">فلتر </span>
+				</button>
+				<p id='total' class="total">مجموع پول جمع شده از دکاندار ها</p> 
             <div id="" style="overflow:scroll; height:90%;">
                 <table>
                     <thead>
@@ -210,7 +238,35 @@ width: 20%;
         <div class="owner_recived">
 
             <h2>پول رسیده به مالک جایدات</h2>
-
+			<br>
+				    <select id="osearchmonth">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+				    <select id="osearchyear">
+                    <option value="1403">1403</option>
+                    <option value="1404">1404</option>
+                    <option value="1405">1405</option>
+                    <option value="1406">1406</option>
+                    <option value="1407">1407</option>
+                    <option value="1408">1408</option>
+                    <option value="1409">1409</option>
+                    <option value="1410">1410</option>
+                </select>
+				<button id="osearch" class="button">
+				<span class="obutton-content">فلتر </span>
+				</button>
+				<p id='ototal' class="total">مجموع پول جمع شده از دکاندار ها</p> 
 
             <div id="" style="overflow:scroll; height:90%;">
                 <table>
@@ -243,7 +299,7 @@ width: 20%;
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label"></label>
-                                <input type="button" class="form-control" value="بله" id="modis" />
+                                <input type="button" class="form-control" value="خیر" id="modis" />
                             </div>
 
 
@@ -259,7 +315,35 @@ width: 20%;
 
         <div class="spend">
             <h2>مصارف</h2>
-
+			<br>
+				    <select id="ssearchmonth">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+				    <select id="ssearchyear">
+                    <option value="1403">1403</option>
+                    <option value="1404">1404</option>
+                    <option value="1405">1405</option>
+                    <option value="1406">1406</option>
+                    <option value="1407">1407</option>
+                    <option value="1408">1408</option>
+                    <option value="1409">1409</option>
+                    <option value="1410">1410</option>
+                </select>
+				<button id="ssearch" class="button">
+				<span class="sbutton-content">فلتر </span>
+				</button>
+				<p id='stotal' class="total">مجموع پول جمع شده از دکاندار ها</p> 
             <div id="" style="overflow:scroll; height:90%;">
                 <table>
                     <thead>
